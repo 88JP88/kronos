@@ -26,7 +26,7 @@ Flight::route('POST /frontLog/@apk/@xapk', function ($apk,$xapk) {
        require_once '../../apiLogs/v1/model/modelSecurity/uuid/uuidd.php';
         
  
-
+ 
         $gen_uuid = new generateUuid();
         $myuuid = $gen_uuid->guidv4();
     
