@@ -37,7 +37,7 @@ Flight::route('POST /frontLog/@apk/@xapk', function ($apk,$xapk) {
         $conectar=conn();
 
     
-        $query = mysqli_query($conectar, "IINSERT INTO frontLogs (logId, logValue, logType) VALUES ('$logId', '$data', '$logType')");
+        $query = mysqli_query($conectar, "INSERT INTO frontLogs (logId, logValue, logType) VALUES ('$logId', '$data', '$logType')");
 
         if ($query) {
             echo "true|¡Repartidor creado con éxito!";
