@@ -98,7 +98,7 @@ Flight::route('POST /postDelivery/', function () {
         }
       */  
     
-echo "h";
+echo $data;
 
         // Acceder a los encabezados
     
