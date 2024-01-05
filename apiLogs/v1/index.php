@@ -26,10 +26,10 @@ Flight::route('POST /frontLog/', function () {
     $conectar = conn();
 
     // Escapar y preparar los datos para la consulta
-    $dtadta = json_encode($data);
+    $dtadta = mysqli_real_escape_string($conectar, json_encode($data));
     
     // Ejecutar la consulta con valores preparados para evitar inyecciones SQL
-    $result = mysqli_query($conectar, "INSERT INTO frontLogs (logId, logValue, logType) VALUES ('$logId','$data','$logType')");
+    $result = mysqli_query($conectar, "INSERT INTO frontLogs (logId, logValue, logType) VALUES ('$logId','$dtadta','$logType')");
 
     if ($result) {
         echo "true|¡Repartidor creado con éxito!";
