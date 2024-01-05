@@ -23,11 +23,11 @@ Flight::route('POST /frontLog/', function () {
     $data= Flight::request()->data->data;
     $logType= Flight::request()->data->logType;
 
-       require_once '../../apiLogs/v1/model/modelSecurity/uuid/uuidd.php';
+//       require_once '../../apiLogs/v1/model/modelSecurity/uuid/uuidd.php';
         
+ require_once '../../apiLogs/v1/model/modelSecurity/uuid/uuidd.php';
  
- 
-        $gen_uuid = new generateUguid();
+        $gen_uuid = new generateUuid();
         $myuuid = $gen_uuid->guidv4();
     
 
