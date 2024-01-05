@@ -21,7 +21,7 @@ class View
      * Location of view templates.
      *
      * @var string
-     */
+     */ 
     public $path;
 
     /**

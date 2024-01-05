@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace flight\net;
 
 use flight\util\Collection;
-
+ 
 /**
  * The Request class represents an HTTP request. Data from
  * all the super globals $_GET, $_POST, $_COOKIE, and $_FILES
@@ -108,7 +108,7 @@ final class Request
      */
     public Collection $files;
 
-    /**
+    /** 
      * @var bool Whether the connection is secure
      */
     public bool $secure;

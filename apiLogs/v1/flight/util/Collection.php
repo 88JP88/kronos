@@ -14,7 +14,7 @@ use ArrayAccess;
 use function count;
 use Countable;
 use Iterator;
-use JsonSerializable;
+use JsonSerializable; 
 
 if (!interface_exists('JsonSerializable')) {
     require_once __DIR__ . '/LegacyJsonSerializable.php';

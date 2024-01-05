@@ -19,7 +19,7 @@ use flight\net\Response;
 use flight\net\Router;
 use flight\template\View;
 use Throwable;
-
+ 
 /**
  * The Engine class contains the core functionality of the framework.
  * It is responsible for loading an HTTP request, running the assigned services,
