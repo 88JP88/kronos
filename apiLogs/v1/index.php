@@ -74,7 +74,7 @@ Flight::route('POST /postDelivery/', function () {
     $data= Flight::request()->data->data;
     $logType= Flight::request()->data->logType;
 
-       require_once '../../apiLogs/v1/model/modelSecurity/uuid/uuidd.php';
+     //  require_once '../../apiLogs/v1/model/modelSecurity/uuid/uuidd.php';
         
  
  
