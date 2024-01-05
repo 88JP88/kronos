@@ -70,6 +70,7 @@ Flight::route('POST /middleLog/', function () {
         // Puedes añadir información adicional sobre el error al log del servidor
         error_log("Error en la consulta SQL: " . mysqli_error($conectar));
     }
+    echo $dtadta;
 });
 
 
