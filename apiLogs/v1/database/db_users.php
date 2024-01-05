@@ -6,8 +6,8 @@ function conn() {
 
 
 
-    require_once 'env/option.php';
-    $sub_domaincon = new model_domain();
+    require_once '../env/option.php';
+    $sub_domaincon = new model_option();
     $sub_domain = $sub_domaincon->dom();
     $option=$sub_domain;
 
