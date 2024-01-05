@@ -82,7 +82,7 @@ Flight::route('POST /postDelivery/', function () {
         //$myuuid = $gen_uuid->guidv4();
     
 
-        $logId = substr($myuuid, 0, 8);
+       // $logId = substr($myuuid, 0, 8);
 
     
         $conectar=conn();
