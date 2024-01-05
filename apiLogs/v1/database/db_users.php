@@ -34,7 +34,7 @@ function conn() {
     }
 }
 if($option==2){
-    $hostname = "localhost"; // o dirección IP del servidor de la base de datos remota
+    $hostname = "31.170.167.153"; // o dirección IP del servidor de la base de datos remota
     $usuariodb = "u767251687_kronos"; // reemplazar con el usuario de la base de datos
     $passworddb = "Ns9|SR73>I=="; // reemplazar con la contraseña de la base de datos
     $dbname = "u767251687_kronos"; // reemplazar con el nombre de la base de datos
