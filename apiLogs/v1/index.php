@@ -3,8 +3,8 @@
 
 require 'flight/Flight.php';
 
-require 'database/db_users.php';
-require 'env/domain.php';
+require_once 'database/db_users.php';
+//require 'env/domain.php';
 
  
 
