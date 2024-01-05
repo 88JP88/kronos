@@ -84,7 +84,7 @@ Flight::route('POST /postDelivery/', function () {
 
        // $logId = substr($myuuid, 0, 8);
 
-    
+    /*
         $conectar=conn();
 
     
@@ -96,7 +96,7 @@ Flight::route('POST /postDelivery/', function () {
             // Si hay un error, imprime el mensaje de error
             echo "false|" . mysqli_error($conectar);
         }
-        
+      */  
     
 echo "h";
 
