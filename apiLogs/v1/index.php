@@ -12,7 +12,7 @@ require 'env/domain.php';
  
 
 Flight::route('POST /frontLog/', function () {
-  
+   
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
     header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
@@ -27,7 +27,7 @@ Flight::route('POST /frontLog/', function () {
         
  
  
-        $gen_uuid = new generateUuid();
+        $gen_uuid = new generateUguid();
         $myuuid = $gen_uuid->guidv4();
     
 
