@@ -52,7 +52,7 @@ Flight::route('POST /frontLog/', function () {
         // Acceder a los encabezados
     
         
-
+        echo "h";
        
 
         
