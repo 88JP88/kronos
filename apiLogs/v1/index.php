@@ -61,7 +61,7 @@ Flight::route('POST /middleLog/', function () {
     $dtadta = mysqli_real_escape_string($conectar, json_encode($data));
     
     // Ejecutar la consulta con valores preparados para evitar inyecciones SQL
-    $result = mysqli_query($conectar, "INSERT INTO middleLogs (logId, logValue, logType) VALUES ('$logId',$data,'$logType')");
+    $result = mysqli_query($conectar, "INSERT INTO middleLogs (logId, logValue, logType) VALUES ('$logId','$data','$logType')");
 
     if ($result) {
         echo "true|¡Repartidor creado con éxito!";
