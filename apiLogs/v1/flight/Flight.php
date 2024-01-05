@@ -65,7 +65,7 @@ class Flight
     /**
      * Framework engine.
      */
-    private static Engine $engine;
+    private static Engine $engine; 
 
     // Don't allow object instantiation
     private function __construct()
