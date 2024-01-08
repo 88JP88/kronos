@@ -64,7 +64,7 @@ Flight::route('POST /middleLog/', function () {
     $result = mysqli_query($conectar, "INSERT INTO middleLogs (logId, logValue, logType) VALUES ('$logId','{}','$logType')");
 
     if ($result) {
-        echo "¡Repartidor creado con éxito!";
+        echo "true|¡Repartidor creado con éxito!";
     } else {
         echo "false|Error en la consulta: " . mysqli_error($conectar);
         // Puedes añadir información adicional sobre el error al log del servidor
