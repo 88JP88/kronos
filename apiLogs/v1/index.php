@@ -92,7 +92,7 @@ Flight::route('POST /prueba/', function () {
     $dtadta = mysqli_real_escape_string($conectar, json_encode($data));
     
     // Ejecutar la consulta con valores preparados para evitar inyecciones SQL
-    $result = mysqli_query($conectar, "INSERT INTO prueba (valores) VALUES ('$data')");
+    $result = mysqli_query($conectar, "INSERT INTO prueba (valores,pruebas) VALUES ('$data','$data')");
 
     if ($result) {
         echo "true|Repartidor creado con éxito!";
