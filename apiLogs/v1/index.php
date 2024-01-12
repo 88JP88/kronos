@@ -32,7 +32,7 @@ Flight::route('POST /frontLog/', function () {
     $result = mysqli_query($conectar, "INSERT INTO frontLogs (logId, logValue, logType) VALUES ('$logId','$data','$logType')");
 
     if ($result) {
-        echo "true|¡Repartidor creado con éxito!";
+       // echo "true|¡Repartidor creado con éxito!";
     } else {
         echo "false|Error en la consulta: " . mysqli_error($conectar);
         // Puedes añadir información adicional sobre el error al log del servidor
@@ -64,7 +64,7 @@ Flight::route('POST /middleLog/', function () {
     $result = mysqli_query($conectar, "INSERT INTO middleLogs (logId, logValue, logType) VALUES ('$logId','$data','$logType')");
 
     if ($result) {
-        echo "true|Repartidor creado con éxito!";
+       // echo "true|Repartidor creado con éxito!";
     } else {
         echo "false|Error en la consulta: " . mysqli_error($conectar);
         // Puedes añadir información adicional sobre el error al log del servidor
@@ -97,7 +97,7 @@ Flight::route('POST /comLog/', function () {
     $result = mysqli_query($conectar, "INSERT INTO comLog (logId, logValue, logType) VALUES ('$logId','$data','$logType')");
 
     if ($result) {
-        echo "true|Repartidor creado con éxito!";
+       // echo "true|Repartidor creado con éxito!";
     } else {
         echo "false|Error en la consulta: " . mysqli_error($conectar);
         // Puedes añadir información adicional sobre el error al log del servidor
